@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFame - Boost Your Social Media</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcY1RjhL6C6bB+7BmV5V+n3ewtxI2KXldIbYL9Kr/3RM15sxMtWxfDla8csUv0IlIUxk2mWy0klw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@stripe/stripe-js@1.19.1/dist/stripe.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>GetFame</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero fade-in">
+            <h2>Boost Your Social Media Presence</h2>
+            <p>Get more followers, likes, and engagement on your social media platforms.</p>
+            <a href="#features" class="btn">Learn More</a>
+        </div>
+    </header>
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide top-notch services to enhance your social media presence. Our team of experts is dedicated to helping you gain more followers, increase engagement, and grow your brand on social media platforms.</p>
+        </div>
+    </section>
+    <section id="features" class="fade-in">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Growth Tracking</h3>
+                    <p>Monitor your social media growth with our comprehensive analytics tools.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Targeted Followers</h3>
+                    <p>Gain followers that are genuinely interested in your content.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h3>Increased Engagement</h3>
+                    <p>Boost your likes, comments, and overall engagement on your posts.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Fast Results</h3>
+                    <p>See noticeable improvements in your social media presence quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="fade-in">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p>$19.99/month</p>
+                    <ul>
+                        <li>500 Followers</li>
+                        <li>100 Likes</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <button class="btn" data-plan="basic">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <p>$49.99/month</p>
+                    <ul>
+                        <li>1500 Followers</li>
+                        <li>500 Likes</li>
+                        <li>Standard Support</li>
+                    </ul>
+                    <button class="btn" data-plan="standard">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <p>$99.99/month</p>
+                    <ul>
+                        <li>5000 Followers</li>
+                        <li>2000 Likes</li>
+                        <li>Premium Support</li>
+                    </ul>
+                    <button class="btn" data-plan="premium">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="fade-in">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"GetFame has drastically improved my social media presence. I gained 1000 followers in just a week!" - Jane Doe</p>
+                </div>
+                <div class="testimonial">
+                    <p>"The engagement on my posts has increased significantly. Highly recommend their services." - John Smith</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Fast and reliable service. I saw noticeable improvements almost immediately." - Sarah Lee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="fade-in">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How does it work?</h3>
+                <p>Our service uses advanced algorithms to target and engage with users who are likely to be interested in your content, helping you grow your follower base and increase engagement.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is it safe?</h3>
+                <p>Yes, our methods comply with all social media platform guidelines to ensure your account remains safe and secure.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How quickly will I see results?</h3>
+                <p>You can expect to see noticeable improvements within the first week of using our service.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section id="payment" class="fade-in">
+        <div class="container">
+            <h2>Payment</h2>
+            <div id="payment-form-container">
+                <form id="payment-form">
+                    <label for="card-element">Credit or debit card</label>
+                    <div id="card-element"></div>
+                    <button id="submit" class="btn">Pay Now</button>
+                    <div id="payment-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GetFame. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
